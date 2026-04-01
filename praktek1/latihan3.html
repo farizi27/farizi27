@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form HTML</title>
+</head>
+<body>
+    <!-- disini terdapat form -->
+  <form method="post" action="">
+    <!-- ini adalah kelompok yang pertama -->
+    <fieldset>
+      <legend>Masukkan data dengan tepat</legend>
+        <!-- ada dua form dengan inputan teks biasa dan pasword -->
+      Nama: <input type="text" name="nama" maxlength="30"><br>
+      Password: <input type="password" name="password" maxlength="6"><br>
+        <!-- ada dua form dengan inputan tipe radio untuk jenis kelamin -->
+      Jenis Kelamin:<br>
+      <input type="radio" name="jenis_kelamin" value="l" checked> Laki-laki<br>
+      <input type="radio" name="jenis_kelamin" value="p"> Perempuan<br>
+         <!-- ada dua form dengan inputan tipe checkbox untuk hobi -->
+      Hobi:<br>
+      <input type="checkbox" name="hobi_mancing" value="mancing" checked> Mancing<br>
+      <input type="checkbox" name="hobi_berburu" value="berburu"> Berburu<br>
+        <!-- ada form dengan inputan tipe select untuk memilih kota -->
+      Pilih Kota:<br>
+      <select name="kota">
+        <option value="jakarta">Jakarta</option>
+        <option value="surabaya" selected>Surabaya</option>
+      </select><br>
+      <!-- ada form dengan inputan tipe textarea untuk memasukkan pesan -->
+      Pesan:<br>
+      <textarea name="pesan" rows="3" cols="30">Tulis pesan di sini</textarea><br>
+         <!-- ada form dengan inputan tipe file untuk mengupload foto -->
+      Upload Foto:<br>
+      <input type="file" name="file_user">
+    </fieldset>
+        <!-- ini adalah kelompok yang kedua --> 
+         
+    <fieldset>
+      <legend>Selesai</legend>
+      <input type="submit" value="SUBMIT">
+      <input type="reset" value="CANCEL">
+    </fieldset>
+  </form>
+</body>
+</html>
